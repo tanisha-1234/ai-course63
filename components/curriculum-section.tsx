@@ -1,10 +1,6 @@
-// components/curriculum-section.tsx
-// Cards now link to a full page per module (/curriculum/[slug])
-// instead of expanding inline. All content lives in lib/curriculum-data.ts.
-
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-import { modules } from '@/lib/curriculum-data'
+import { modules } from '@/lib/curriculum'
 
 export function CurriculumSection() {
   return (
@@ -22,8 +18,8 @@ export function CurriculumSection() {
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {modules.map((mod) => (
             <Link
-              key={mod.day}
-              href={`/curriculum/${mod.slug}`}
+              key={mod.slug}
+              href={`/modules/${mod.slug}`}
               className={`group flex flex-col rounded-xl border bg-card p-6 transition-colors hover:border-primary/40 ${
                 mod.featured ? 'border-primary/60' : 'border-border'
               }`}
@@ -44,9 +40,9 @@ export function CurriculumSection() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{mod.desc}</p>
               <div className="mt-6 flex items-center justify-between border-t border-border/60 pt-4">
                 <span className="text-sm text-muted-foreground">{mod.hours}</span>
-                <span className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-opacity group-hover:opacity-80">
-                  View days
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                <span className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-transform group-hover:translate-x-0.5">
+                  View details
+                  <ArrowRight className="h-4 w-4" />
                 </span>
               </div>
             </Link>

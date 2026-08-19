@@ -12,7 +12,7 @@ export function CurriculumSection() {
         </h2>
         <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
           Day 0 and Day 1 are optional foundations for anyone new to Python or AI. Everyone else can
-          jump straight to Day 2. Select any module to see its day-wise breakdown.
+          jump straight to Day 2. Select any module to see its full breakdown.
         </p>
 
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

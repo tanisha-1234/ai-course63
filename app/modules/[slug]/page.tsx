@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { ArrowLeft, ArrowRight, BrainCircuit, Clock, CircleCheck, FlaskConical } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BrainCircuit, Clock, CircleCheck, FlaskConical, Lightbulb } from 'lucide-react'
 import { modules, getModule } from '@/lib/curriculum'
 
 export function generateStaticParams() {
@@ -104,6 +104,19 @@ export default async function ModulePage({
                     </li>
                   ))}
                 </ul>
+                {session.example && (
+                  <div className="mt-4 rounded-lg border border-border bg-background/60 p-4">
+                    <div className="flex items-center gap-2">
+                      <Lightbulb className="h-4 w-4 text-primary" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                        See it in action
+                      </span>
+                    </div>
+                    <p className="mt-2.5 whitespace-pre-line font-mono text-[13px] leading-relaxed text-muted-foreground">
+                      {session.example}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>

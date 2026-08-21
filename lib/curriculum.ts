@@ -92,7 +92,6 @@ Hello, Arjun`,
     tag: 'Optional',
     title: 'AI & GenAI Foundations',
     desc: 'What AI / LLMs are and how they work',
-    hours: '2.5h',
     overview:
       "What is AI actually doing when it answers you? This module explains it in plain terms — no math, no jargon. By the end, you'll understand why AI sometimes sounds confident and is still wrong, and how to ask it better questions.",
     keyTakeaway:

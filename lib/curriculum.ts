@@ -12,7 +12,6 @@ export type Module = {
   tag?: string
   title: string
   desc: string
-  hours: string
   featured?: boolean
   overview: string
   keyTakeaway: string

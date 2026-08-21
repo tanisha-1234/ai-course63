@@ -23,7 +23,7 @@ export type Module = {
 export const modules: Module[] = [
   {
     slug: 'python-foundations',
-    day: 'Day 0',
+    day: 'Module 1',
     tag: 'Optional',
     title: 'Python Foundations',
     desc: 'Python basics refresher',
@@ -88,7 +88,7 @@ Hello, Arjun`,
   },
   {
     slug: 'ai-genai-foundations',
-    day: 'Day 1',
+    day: 'Module 2',
     tag: 'Optional',
     title: 'AI & GenAI Foundations',
     desc: 'What AI / LLMs are and how they work',
@@ -141,7 +141,7 @@ partners starting next quarter."`,
   },
   {
     slug: 'chatbots-to-agents',
-    day: 'Day 2',
+    day: 'Module 3',
     title: 'From Chatbots to Agents',
     desc: 'Chatbots vs. agents that take action',
     overview:
@@ -193,7 +193,7 @@ Agent: "Done — moved to 4pm, Arjun notified."`,
   },
   {
     slug: 'memory-context-rag',
-    day: 'Day 3',
+    day: 'Module 4',
     title: 'Memory, Context & RAG',
     desc: 'Memory and answering from real documents',
     overview:
@@ -264,7 +264,7 @@ not guessed from general knowledge.`,
   },
   {
     slug: 'tool-use-apis-actions',
-    day: 'Day 4',
+    day: 'Module 5',
     title: 'Tool Use, APIs & Agent Actions',
     desc: 'Connecting agents to real systems',
     overview:
@@ -316,7 +316,7 @@ If system is down: "Inventory system unavailable — try again shortly"`,
   },
   {
     slug: 'multi-agent-systems',
-    day: 'Day 5',
+    day: 'Module 6',
     title: 'Multi-Agent Systems (Co-pilot)',
     desc: 'How copilots work',
     overview:
@@ -390,7 +390,7 @@ else:
   },
   {
     slug: 'safety-ethics-responsible-ai',
-    day: 'Day 6',
+    day: 'Module 7',
     title: 'Safety, Ethics & Responsible Agentic AI',
     desc: 'Safety, fairness, and regulation',
     overview:
@@ -445,7 +445,7 @@ Low-risk action  -> executes automatically, no pause needed.`,
   },
    {
     slug: 'ai-governance',
-    day: 'Day 7',
+    day: 'Module 8',
     title: 'AI Governance',
     desc: 'Keeping AI systems governed post-launch',
     overview:

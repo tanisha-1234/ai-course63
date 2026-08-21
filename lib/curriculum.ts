@@ -27,7 +27,6 @@ export const modules: Module[] = [
     tag: 'Optional',
     title: 'Python Foundations',
     desc: 'Python basics refresher',
-    hours: '3h',
     overview:
   "Never coded before? Start here. Code is just a list of instructions for a computer, written in a very literal language. This module teaches you enough to follow the rest of the course. You don't need to become a programmer — just be able to read simple code. You'll need a laptop and about 30 minutes; if you'd rather not install anything, you can also follow along in your browser using a free tool like Replit.",
     keyTakeaway:
@@ -146,7 +145,6 @@ partners starting next quarter."`,
     day: 'Day 2',
     title: 'From Chatbots to Agents',
     desc: 'Chatbots vs. agents that take action',
-    hours: '2.5h',
     overview:
       "There's a big difference between AI that talks and AI that acts. This module explains that difference clearly, using everyday examples — so you understand what an \"agent\" actually is before we start building one.",
     keyTakeaway:
@@ -199,7 +197,6 @@ Agent: "Done — moved to 4pm, Arjun notified."`,
     day: 'Day 3',
     title: 'Memory, Context & RAG',
     desc: 'Memory and answering from real documents',
-    hours: '3h',
     overview:
       "AI can only \"remember\" a limited amount at once — and it doesn't know your company's documents unless you show them to it. This module explains how AI can answer questions using your real files, accurately, instead of guessing.",
     keyTakeaway:
@@ -271,7 +268,6 @@ not guessed from general knowledge.`,
     day: 'Day 4',
     title: 'Tool Use, APIs & Agent Actions',
     desc: 'Connecting agents to real systems',
-    hours: '2.5h',
     overview:
       "This is how AI moves from talking to doing. This module explains, in plain terms, how an agent gets access to real systems — like a calendar or an inbox — and knows when to use them.",
     keyTakeaway:
@@ -324,7 +320,6 @@ If system is down: "Inventory system unavailable — try again shortly"`,
     day: 'Day 5',
     title: 'Multi-Agent Systems (Co-pilot)',
     desc: 'How copilots work',
-    hours: '3h',
     overview:
       "Some tasks are too big for one agent alone. This module explains how several agents can split up work and cooperate — and how Microsoft Copilot actually uses this idea behind the scenes.",
     keyTakeaway:
@@ -399,7 +394,6 @@ else:
     day: 'Day 6',
     title: 'Safety, Ethics & Responsible Agentic AI',
     desc: 'Safety, fairness, and regulation',
-    hours: '2h',
     overview:
       "The more an agent can do, the more it can go wrong. This module explains, simply, where AI tends to fail and how to build in safety nets before something risky happens.",
     keyTakeaway:
@@ -455,7 +449,6 @@ Low-risk action  -> executes automatically, no pause needed.`,
     day: 'Day 7',
     title: 'AI Governance',
     desc: 'Keeping AI systems governed post-launch',
-    hours: '2h',
     overview:
       "Launching an AI agent isn't the finish line — someone has to keep watching it. This module explains, simply, what happens after an agent goes live, and who's responsible for keeping it working correctly. We'll also look at what governance looks like specifically at Tata AutoComp, where AI touches everything from plant operations to internal IT requests.",
     keyTakeaway:
@@ -530,7 +523,6 @@ Routine access -> can auto-approve, still logged.`,
     day: 'Capstone',
     title: 'Example Video',
     desc: 'Hands-on experience',
-    hours: '1h',
     featured: true,
     overview:
       "Everything from the course, shown in one real example. Watch an agent go from noticing a problem to actually solving it — safely, and with a person still in control.",

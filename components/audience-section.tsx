@@ -6,7 +6,7 @@ const tracks = [
     title: 'New to AI / Python',
     desc: 'Never written code or used AI tools? Start at the very beginning.',
     points: [
-      'Begin with optional Day 0 & Day 1 foundations',
+      'Begin with optional Module 1 & Module 2 foundations',
       'No prior programming or AI knowledge assumed',
       'Plain-language concepts before any hands-on work',
       'Build confidence step by step toward your first agent',
@@ -18,7 +18,7 @@ const tracks = [
     title: 'Already Coding',
     desc: 'Comfortable with code? Skip the basics and go straight to agents.',
     points: [
-      'Start at Day 2 — From Chatbots to Agents',
+      'Start at Module 3 — From Chatbots to Agents',
       'Deep dives into agent architectures & multi-agent systems',
       'Focus on tool use, APIs, and production patterns',
       'Ship a hands-on RAG assistant by the end',

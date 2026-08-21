@@ -10,9 +10,9 @@ export function CurriculumSection() {
         <h2 className="mt-4 max-w-2xl text-balance font-serif text-4xl font-bold leading-tight text-foreground md:text-5xl">
           From fundamentals to a shipped agent
         </h2>
-        <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
-          Day 0 and Day 1 are optional foundations for anyone new to Python or AI. Everyone else can
-          jump straight to Day 2. Select any module to see its full breakdown.
+         <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
+          Module 1 and Module 2 are optional foundations for anyone new to Python or AI. Everyone else
+          can jump straight to Module 3. Select any module to see its full breakdown.
         </p>
 
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -38,8 +38,7 @@ export function CurriculumSection() {
                 {mod.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{mod.desc}</p>
-              <div className="mt-6 flex items-center justify-between border-t border-border/60 pt-4">
-                <span className="text-sm text-muted-foreground">{mod.hours}</span>
+                            <div className="mt-6 flex items-center justify-end border-t border-border/60 pt-4">
                 <span className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-transform group-hover:translate-x-0.5">
                   View details
                   <ArrowRight className="h-4 w-4" />

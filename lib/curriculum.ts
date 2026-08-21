@@ -451,18 +451,18 @@ Low-risk action  -> executes automatically, no pause needed.`,
     exercise:
       'Pick an agent idea from an earlier module. Write down one thing that could go wrong, and one simple rule (guardrail) that would catch it before it causes a problem.',
   },
-  {
+   {
     slug: 'ai-governance',
     day: 'Day 7',
     title: 'AI Governance',
     desc: 'Keeping AI systems governed post-launch',
     hours: '2h',
     overview:
-      "Launching an AI agent isn't the finish line — someone has to keep watching it. This module explains, simply, what happens after an agent goes live, and who's responsible for keeping it working correctly.",
+      "Launching an AI agent isn't the finish line — someone has to keep watching it. This module explains, simply, what happens after an agent goes live, and who's responsible for keeping it working correctly. We'll also look at what governance looks like specifically at Tata AutoComp, where AI touches everything from plant operations to internal IT requests.",
     keyTakeaway:
-      "Shipping an agent isn't the end. Someone needs to own it, check on it over time, and know when to fix or shut it down.",
+      "Shipping an agent isn't the end. Someone needs to own it, check on it over time, and know when to fix or shut it down — and at an automotive components company, that ownership matters even more where quality and safety are on the line.",
     example:
-      'An agent that auto-replies to customer emails should have someone checking a sample of its replies every week.',
+      'An agent that auto-replies to customer emails should have someone checking a sample of its replies every week. At Tata AutoComp, the same principle applies to an agent handling IT access requests — someone should still spot-check that it\'s granting the right access to the right people.',
     sessions: [
       {
         label: 'Session 1',
@@ -502,9 +502,29 @@ exactly what the agent did, when, and who approved it.`,
         output: `Monthly review completed — 0 issues found,
 next review scheduled for next month.`,
       },
+      {
+        label: 'Session 3',
+        title: 'Governance at Tata AutoComp',
+        topics: [
+          "Automotive components feed into safety-critical systems, so any AI touching design, quality, or production data needs stricter sign-off than a general office tool.",
+          "Different plants and functions may deploy their own agents — governance should track what's running where, not just one central list.",
+          "An internal example: an agent that automates IT access requests (folder access, VPN, data transfer) needs clear rules on who can approve elevated access, and a log of every grant — because access mistakes are a security and compliance risk, not just an inconvenience.",
+          "IT, Security, and the function that owns the process (not just the builder of the agent) should jointly review any agent that touches sensitive systems.",
+        ],
+        code: `# Example: governance check for the IT access agent
+if request.access_level == "elevated":
+    require_manager_approval(request)
+    log_to_audit_trail(request, approver, timestamp)
+else:
+    auto_approve(request)
+    log_to_audit_trail(request, approver="system", timestamp)`,
+        output: `Elevated access (e.g. VPN, sensitive folders) -> always
+logged + approved by a person.
+Routine access -> can auto-approve, still logged.`,
+      },
     ],
     exercise:
-      'Write a short checklist (3-4 items) for what someone should check monthly on an AI agent that\'s already live — e.g. "sample 5 recent outputs," "confirm no complaints."',
+      'Write a short checklist (3-4 items) for what someone should check monthly on an AI agent that\'s already live — e.g. "sample 5 recent outputs," "confirm no complaints." Then, for one AI use case at Tata AutoComp (like the IT access chatbot), write down who should own it and who needs to approve its riskiest actions.',
   },
   {
     slug: 'capstone',
